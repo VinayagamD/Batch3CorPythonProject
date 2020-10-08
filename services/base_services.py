@@ -1,3 +1,6 @@
+from services import product_dao
+
+
 class BaseService(object):
     """
     This class has base rules for the DAO
@@ -20,3 +23,9 @@ class BaseService(object):
 
     def delete_by_id(self, id):
         pass
+
+
+class ProductService(BaseService):
+
+    def __init__(self):
+        self.dao = product_dao()

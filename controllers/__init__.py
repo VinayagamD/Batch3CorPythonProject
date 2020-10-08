@@ -1,6 +1,6 @@
 from .product_controller import ProductController
-from services import ProductService
+from services import ProductServiceImpl
 
 
 def product_service():
-    return ProductService()
+    return ProductServiceImpl()

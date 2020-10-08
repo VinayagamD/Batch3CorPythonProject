@@ -1,7 +1,7 @@
-from .base_services import BaseService
-from .product_services import ProductService
-from daos import ProductDao
+from .base_services import BaseService, ProductService
+from daos import ProductDao, CategoryDao, SubCategoryDao, ProductDaoImpl, CategoryDaoImpl, SubCategoryDaoImpl
+from .impl_services import ProductServiceImpl
 
 
 def product_dao():
-    return ProductDao()
+    return ProductDaoImpl()

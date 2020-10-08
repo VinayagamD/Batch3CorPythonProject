@@ -1,11 +1,10 @@
-from services import BaseService
-from services import product_dao
+from services import ProductService
 
 
-class ProductService(BaseService):
+class ProductServiceImpl(ProductService):
 
     def __init__(self):
-        self.dao = product_dao()
+        super().__init__()
 
     def find_all(self):
         self.dao.find_all()

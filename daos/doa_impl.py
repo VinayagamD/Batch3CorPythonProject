@@ -1,7 +1,7 @@
-from daos import BaseDoa
+from daos import ProductDao, CategoryDao, SubCategoryDao
 
 
-class ProductDao(BaseDoa):
+class ProductDaoImpl(ProductDao):
     """
     This class helps to do CRUD operation for the Product
     """
@@ -25,7 +25,7 @@ class ProductDao(BaseDoa):
         super().delete_by_id(id)
 
 
-class CategoryDao(BaseDoa):
+class CategoryDaoImpl(CategoryDao):
     """
     This class helps to do CRUD operations for the Category
     """
@@ -49,7 +49,7 @@ class CategoryDao(BaseDoa):
         super().delete_by_id(id)
 
 
-class SubCategoryDao(BaseDoa):
+class SubCategoryDaoImpl(SubCategoryDao):
     """
     This class helps to do CRUD operations for the SubCategory
     """
