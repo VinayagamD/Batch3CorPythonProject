@@ -34,5 +34,3 @@ class SubCategory:
         self.id = 0
         self.name = ''
         self.category: Category = None
-
-

@@ -7,7 +7,8 @@ class ProductDaoImpl(ProductDao):
     """
 
     def find_all(self):
-        super().find_all()
+        self.open_file(file=self.file_name, mode=self.read_mode)
+        self.close_file()
 
     def find_by_id(self, id=0):
         super().find_by_id(id)

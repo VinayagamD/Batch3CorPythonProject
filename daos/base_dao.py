@@ -28,6 +28,8 @@ class DoaSourceUtil(BaseDoa):
         self.file = None
         self.read_mode = "r"
         self.write_mode = "w"
+        self.append_mode = "a"
+        self.read_write_mode = "r+"
 
     def open_file(self, file, mode):
         self.file = open(file, mode)
@@ -41,7 +43,7 @@ class ProductDao(DoaSourceUtil):
 
     def __init__(self):
         super().__init__()
-        self.file_name = "product.json"
+        self.file_name = "../resources/product.json"
 
 
 class CategoryDao(BaseDoa):
